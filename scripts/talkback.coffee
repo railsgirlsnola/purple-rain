@@ -19,7 +19,7 @@ module.exports = (robot) ->
     msg.reply "I heard check this out."
 
   robot.hear /help/i, (msg) ->
-    msg.reply "I heard help."robot 
+    msg.reply "I heard help." 
 
   robot.hear /LOL/i, (msg) ->
     msg.reply "I heard LOL."
