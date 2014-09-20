@@ -14,7 +14,7 @@
 
 
 module.exports = (robot) ->
-  var responses= [
+  responses= [
     "Hey. Hey, proposition: first person to untie me, guy or gal, I will let him or her give me a handy. Come on, let's share the milk of human kindness!",
     "Holy shit snacks!",
     "No Cyril, when they're dead, they're just hookers!",
@@ -32,26 +32,26 @@ module.exports = (robot) ->
     "God, everything makes you uncomfortable. Just the tip?",
     "Cyril, I paid her, I get to carry her corpse.",
     "Do you not see me rocking this chiseled slab of hard man body? I mean, come on! Are you gay or not?",
-    "Boy, you are just so determined not to be cool about this.",
+    "Boy, you are just so determined not to be cool about this."
   ]
 
   robot.hear /Check this out/i, (msg) ->
-    msg.reply "I heard check this out."
+    msg.send msg.random responses
 
   robot.hear /help/i, (msg) ->
-    msg.reply "I heard help." 
+    msg.send msg.random responses
 
   robot.hear /LOL/i, (msg) ->
-    msg.reply "I heard LOL."
+    msg.send msg.random responses
 
   robot.hear /OMG/i, (msg) ->
-    msg.reply "I heard OMG." 
+    msg.send msg.random responses
 
   robot.hear /sorry/i, (msg) ->
-    msg.reply "I heard sorry."
+    msg.send msg.random responses
 
   robot.hear /thanks/i, (msg) ->
-    msg.reply "I heard thanks."
+    msg.send msg.random responses
 
 
 
