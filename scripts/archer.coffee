@@ -22,7 +22,12 @@ module.exports = (robot) ->
   robot.hear /^sitting down/i, (msg) ->
     msg.reply "What?! At the table? Look, he thinks he's people!"
 
-  robot.hear /^archer/i, (msg) ->
+
+  robot.hear /^Lana lana/i, (msg) ->
+    msg.reply "Whaaaaaaat?!"
+
+  robot.hear /archer/i, (msg) ->
+
 
     options = {
        'uri': 'http://en.wikiquote.org/wiki/Archer_(TV_series)',
