@@ -22,7 +22,6 @@ module.exports = (robot) ->
   robot.hear /^sitting down/i, (msg) ->
     msg.reply "What?! At the table? Look, he thinks he's people!"
 
-
   robot.hear /^Lana lana/i, (msg) ->
     msg.reply "Whaaaaaaat?!"
 
